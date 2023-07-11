@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>MOKA Coffee</title>
+</head>
+<body>
+    <header>
+        <div class="header-circle"></div>
+        <input type="checkbox" id="hamburger" />
+        <nav class="nav-bar">
+            <a href="#inicio">
+                <img src="assets/logo.png" alt="logo" class="nav-logo" />
+            </a>
+            <label class="navbar-hamburger" for="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="nav-list">
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#productos">Productos</a>
+                </li>
+                <li>
+                    <a href="#delivery">Delivery</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="text-box">
+                <h2>Más que café. 
+                    Explora el sabor <span class="word">revolucionario</span></h2>
+                <p>
+                    MOKA, donde el sabor y la audacia se encuentran en cada taza de café. No tenemos miedo de desafiar los límites del sabor y romper con lo convencional. Si buscas un lugar donde el café sea una experiencia que te haga vibrar, has llegado al sitio indicado.
+                </p>
+                <button class="button-colored">
+                    <a href="#">Descubre más</a>
+                </button>
+            </div>
+            <div class="img-box">
+                <img src="assets/1.png" class="first-frappe" />
+            </div>
+        </div>
+        <ul class="header-slider">
+            <li>
+                <img src="assets/1.png" onclick="imgSlider('assets/1.png')
+                                        ;changeCircleColor('#d19c66')
+                                        ;changeWordColor('#d19c66')
+                                        ;changeButtonColor('#d19c66')" />
+            </li>
+            <li>
+                <img src="assets/2.png" onclick="imgSlider('assets/2.png')
+                                        ;changeCircleColor('#f3d098')
+                                        ;changeWordColor('#f3d098')
+                                        ;changeButtonColor('#f3d098')" />
+            </li>
+            <li>
+                <img src="assets/3.png" onclick="imgSlider('assets/3.png')
+                                        ;changeCircleColor('#91996c')
+                                        ;changeWordColor('#91996c')
+                                        ;changeButtonColor('#91996c')" />
+            </li>
+        </ul>
+        <ul class="social-icons">
+            <li>
+                <a href="#">
+                    <i class='bx bxl-facebook-circle bx-md'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-instagram-alt bx-md'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-twitter bx-md'></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <script src="main.js"></script>
+</body>
+</html>
